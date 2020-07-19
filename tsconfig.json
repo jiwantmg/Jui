@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "jui-date-converter": [
+        "dist/jui-date-converter/jui-date-converter",
+        "dist/jui-date-converter"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
