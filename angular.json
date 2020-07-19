@@ -42,6 +42,46 @@
           }
         }
       }
+    },
+    "jui-datatable": {
+      "projectType": "library",
+      "root": "projects/jui-datatable",
+      "sourceRoot": "projects/jui-datatable/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/jui-datatable/tsconfig.lib.json",
+            "project": "projects/jui-datatable/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/jui-datatable/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/jui-datatable/src/test.ts",
+            "tsConfig": "projects/jui-datatable/tsconfig.spec.json",
+            "karmaConfig": "projects/jui-datatable/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/jui-datatable/tsconfig.lib.json",
+              "projects/jui-datatable/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "cli": {
     "analytics": false

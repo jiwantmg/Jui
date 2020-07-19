@@ -19,6 +19,10 @@
       "jui-date-converter": [
         "dist/jui-date-converter/jui-date-converter",
         "dist/jui-date-converter"
+      ],
+      "jui-datatable": [
+        "dist/jui-datatable/jui-datatable",
+        "dist/jui-datatable"
       ]
     }
   },
