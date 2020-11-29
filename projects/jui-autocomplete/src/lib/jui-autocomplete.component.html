@@ -1,0 +1,20 @@
+<div class="search-container position-relative d-inline-block">
+    <input id="search" class="row-input" 
+        autocomplete="off" type="text" 
+        libLekhaClickOutside
+        (clickOutside)="toggleDropDown($event, row.id)" 
+        placeholder="Search item"
+        (blur)="closeDropDown(row)"                 
+        (keydown)="openDropDown(row)"
+        [(ngModel)]="row.searchString"
+        [value]="row.itemName">                        
+    <div class="item-container-dropdown"
+    libLekhaKeydown
+    (onEnter)="onEnterSelected($event, row)"
+    *ngIf="showDropDown && selectedRowId == row.id"
+        >
+        <div>
+            <div class="item" *ngFor="let item of items | libLekhaSearchFilter: row.searchString" (click)="itemSelected(item)">{{ item.itemName }}</div>
+        </div>
+    </div>
+</div>                        
