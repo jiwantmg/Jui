@@ -23,6 +23,10 @@
       "jui-datatable": [
         "dist/jui-datatable/jui-datatable",
         "dist/jui-datatable"
+      ],
+      "jui-autocomplete": [
+        "dist/jui-autocomplete/jui-autocomplete",
+        "dist/jui-autocomplete"
       ]
     }
   },
