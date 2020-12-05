@@ -27,6 +27,10 @@
       "jui-autocomplete": [
         "dist/jui-autocomplete/jui-autocomplete",
         "dist/jui-autocomplete"
+      ],
+      "jui-datepicker": [
+        "dist/jui-datepicker/jui-datepicker",
+        "dist/jui-datepicker"
       ]
     }
   },

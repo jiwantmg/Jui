@@ -5,12 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SearchFilterPipe implements PipeTransform {
 
-  transform(value: any, search: string): any {
+  transform(value: any, search: string, searchBy: string): any {
     if(!search) { return value; }
     let solution = value.filter(v => 
       {        
         if(!v) return;
-        return v.itemName.toLowerCase().indexOf(search.toLowerCase()) !== -1;
+        return v[searchBy].toLowerCase().indexOf(search.toLowerCase()) !== -1;
       });
 
       return solution;

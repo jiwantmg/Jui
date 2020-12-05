@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { JuiAutocompleteModule } from 'jui-autocomplete';
 import { AppComponent } from './app.component';
+import { JuiDatepickerModule } from 'jui-datepicker';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    JuiAutocompleteModule
+    JuiAutocompleteModule,
+    JuiDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

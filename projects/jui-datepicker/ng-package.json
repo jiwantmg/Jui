@@ -1,0 +1,14 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/jui-datepicker",
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  },
+  "whitelistedNonPeerDependencies": [
+    "tslib",
+    "@angular/cdk",
+    "angular-nepali-datepicker",
+    "nepali-date",
+    "ngx-bootstrap"
+  ]
+}

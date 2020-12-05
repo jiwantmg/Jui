@@ -1,6 +1,14 @@
 <jui-autocomplete
   [dataSource]="items"
-  [row]="row"
   (onSelect)="itemChanged($event)"
+  [searchBy]="'itemName'"
+  [keyText]="'itemName'"
+  [keyValue]="'id'"
 >
 </jui-autocomplete>
+
+<jui-datepicker
+  [isEnglish]="false"
+  (onDateSelected)="dateSelected($event)">
+</jui-datepicker>
+<div>sdfds</div>
